@@ -21,10 +21,9 @@ import tensorflow as tf
 import datetime
 import random
 
-from keras.models import Sequential
-from keras.layers import LSTM, Dropout, Dense
-from keras.callbacks import ReduceLROnPlateau
-from sklearn.preprocessing import MinMaxScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dropout, Dense
+from tensorflow.keras.callbacks import ReduceLROnPlateaufrom sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 
 """**Set reproducibility**"""
