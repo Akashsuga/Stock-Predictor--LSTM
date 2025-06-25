@@ -14,7 +14,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import yfinance as yf
 import datetime
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
