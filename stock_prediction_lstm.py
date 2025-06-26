@@ -9,7 +9,6 @@ Original file is located at
 **Install Required Packages**
 """
 
-!pip install yfinance keras scikit-learn matplotlib
 
 """**Import Modules and Set Seeds**"""
 
