@@ -42,12 +42,15 @@ st.sidebar.title("Navigation Panel")
 page = st.sidebar.radio("Select Section", ["Overview", "Select Company", "Data Upload", "Forecast"])
 
 # --- Load Pretrained Model ---
-
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from joblib import load
 
+# Load the trained LSTM model
 model = load_model("lstm_model.keras")
+
+# Load the fitted scaler
 scaler = load("scaler.joblib")
+
 
 
 # --- Utility Functions ---
