@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1Fl8Gdi0FU_6GcYcq51ZLqmfNM4kN24zJ
 """
 
-!pip install matplotlib streamlit yfinance scikit-learn
 import streamlit as st
 import numpy as np
 import pandas as pd
