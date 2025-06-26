@@ -48,7 +48,7 @@ st.sidebar.title("Navigation Panel")
 page = st.sidebar.radio("Select Section", ["Overview", "Select Company", "Data Upload", "Forecast"])
 
 # --- Load Pretrained Model ---
-model = keras.models.load_model("lstm_model.keras")
+model = keras.models.load_model("lstm_model.h5")
 
 # --- Utility Functions ---
 def preprocess_data(data):
