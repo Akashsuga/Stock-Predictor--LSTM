@@ -18,6 +18,12 @@ from keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
+import os
+if not os.path.exists("lstm_model.keras"):
+    st.error("❌ Model file lstm_model.keras not found!")
+    st.stop()
+
+
 # --- Page Configuration and Custom Styling ---
 st.set_page_config(page_title="Stock Forecast App", layout="wide")
 st.markdown("""
