@@ -46,7 +46,12 @@ from tensorflow.keras.models import load_model
 from joblib import load
 
 # Load the trained LSTM model
-model = load_model("lstm_model.h5")
+# in the original environment
+from keras.models import load_model, save_model
+
+model = load_model('lstm_model.h5')
+save_model(model, 'lstm_model_compatible.h5', include_optimizer=False)
+
 
 # Load the fitted scaler
 scaler = load("scaler.joblib")
