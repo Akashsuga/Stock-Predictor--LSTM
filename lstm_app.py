@@ -49,8 +49,7 @@ from joblib import load
 # in the original environment
 from keras.models import load_model, save_model
 
-model = load_model('lstm_model.h5')
-save_model(model, 'lstm_model_compatible.h5', include_optimizer=False)
+model = load_model('lstm_model.keras')
 
 
 # Load the fitted scaler
